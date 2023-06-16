@@ -140,24 +140,110 @@
 // console.log(n)
 
 
-let objArray =[
-    { product: "Milk", quantity: 1, price: 1.50 },
-    { product: "Eggs", quantity: 12, price: 0.10 },
-    { product: "Bread", quantity: 2, price: 1.60 },
-    { product: "Cheese", quantity: 1, price: 4.50 }
-  ]
+// let objArray =[
+//     { product: "Milk", quantity: 1, price: 1.50 },
+//     { product: "Eggs", quantity: 12, price: 0.10 },
+//     { product: "Bread", quantity: 2, price: 1.60 },
+//     { product: "Cheese", quantity: 1, price: 4.50 }
+//   ]
       
 
-  const getTotalPrice=(objArray)=>{
+//   const getTotalPrice=(objArray)=>{
 
-    let demo=0;
-    for(i in objArray){
-         demo = demo + objArray[i].quantity * objArray[i].price;
-    }
-    console.log(demo)
+//     let demo=0;
+//     for(i in objArray){
+//          demo = demo + objArray[i].quantity * objArray[i].price;
+//     }
+//     console.log(demo)
 
-  }
-getTotalPrice(objArray)
+//   }
+// getTotalPrice(objArray)
+
+// let array = [1, 2, 3, 4, 5, 6, 7] ;
+// arr = []
+
+// arr1 = array.sort(sorting = (a, b) => {
+//   return a-b
+// })
+
+// // console.log(arr1)
+
+// arr.push(Math.min(...array))
+// arr.push(Math.max(...array))
+
+// console.log(arr)
 
 
 
+// console.log(Math.max(...array))
+
+
+// let array = [[1, 2, 3, 4], [2, 3]]
+// for (let i in array){
+//   if(Math.min(...array[0]) > Math.min(...array[1]) && Math.max(...array[0]) < Math.max(...array[1])){
+//     console.log(true)
+//     break;
+//   }else{
+//     console.log(false)
+//     break;
+//   }
+// }
+
+// let array =["Leonardo", "Michelangelo", "Raphael", "Donatello"];
+
+// let Sorting = array.sort(sorting = (a, b) => {
+//     if(a.length > b.length){
+//       return 1
+//     }else{
+//       return -1
+//     }
+//   }
+// )
+
+// console.log(Sorting)
+
+// let array = [2, -1, 4, 8, 10]
+// let newArray = []
+// let sum = 0
+// for(let i in array){
+//   if(array[i]<0 || array[i]>0){
+//     newArray.push(Math.abs(array[i]))
+//     sum += newArray[i] 
+//   }
+// }
+// console.log(sum)
+
+
+// let result = array.reduce((total, currentValue) => {
+//   return total + Math.abs(currentValue);
+// }, 0);
+
+// console.log(result)
+
+array = ["Adam", "Sarah", "Malcolm"];
+
+const sortingArray = () => {
+  let newarray = [...array]
+  newarray.sort()  
+  let string = ''
+  for(let i in newarray){
+    string += (newarray[i][0])
+}
+console.log(newarray)
+console.log(array)
+console.log(string)
+}
+
+sortingArray()
+
+
+// let Sorting = array.sort(sorting = (a, b) => {
+  
+    
+
+//   }else{
+//   }
+// }
+// )
+
+// console.log(newArray.join(''))
