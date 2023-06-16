@@ -33,17 +33,17 @@ let Username1 = document.querySelector('#username')
 //At least contain one digit 0 to 9
 
 //this is for password
-let passwordPattern = "^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9]).{8,}$"
-form.addEventListener('submit',function(e){
-    e.preventDefault()
-    let result = password.value
-    let finalresult = result.match(passwordPattern)   //match is method used to check with password pattern
-    if(finalresult){
-        console.log("Successfully Submmited the password")
-    }else{
-        console.log("Failed to submit the form")
-    }
-})
+// let passwordPattern = "^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9]).{8,}$"
+// form.addEventListener('submit',function(e){
+//     e.preventDefault()
+//     let result = form.password.value
+//     let finalresult = result.match(passwordPattern)   //match is method used to check with password pattern
+//     if(finalresult){
+//         console.log("Successfully Submmited the password")
+//     }else{
+//         console.log("Failed to submit the form")
+//     }
+// })
 
 
 //for username
@@ -51,18 +51,18 @@ form.addEventListener('submit',function(e){
 //username can only consist of A-Z or a-z
 //length of username between 6 to 12 length
 
-let userNamePattern = /^[A-Za-z].{6,12}$/
-form.addEventListener('submit',function(e){
-    e.preventDefault()
-    let username2 = Username1.value
-    let userNamecheck = userNamePattern.test(username2)
-    if(userNamecheck==true){
-        console.log("Username is valid")
-    }else{
-        console.log("username is invalid try again")
-    }
+// let userNamePattern = /^[A-Za-z]{6,12}$/
+// form.addEventListener('submit',function(e){
+//     e.preventDefault()
+//     let username2 = Username1.value
+//     let userNamecheck = userNamePattern.test(username2)
+//     if(userNamecheck==true){
+//         console.log("Username is valid")
+//     }else{
+//         console.log("username is invalid try again")
+//     }
 
-})
+// })
 
 
 
@@ -85,8 +85,9 @@ form.addEventListener('submit',function(e){
 
 //keyboard Event
 
-Username1.addEventListener('keyup', function(){
-    if(userNamePattern.text(Username1.value)){
+let userNamePattern = /^[A-Za-z]{6,12}$/
+Username1.addEventListener('keyup', function(e){
+    if(userNamePattern.text(e.target.value)){
         console.log("passed")
     }else{
         console.log("failed")
