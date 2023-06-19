@@ -35,13 +35,14 @@ fetch("data.json").then((response)=>{
 //async and await
 
 let getTodos = async() => {
-    let response = await fetch("data.json");
+    let response = await fetch("https://jsonplaceholder.typicode.com/todos");
     let data1 = await response.json()
+    console.log(response)
     return data1
 }
 
 getTodos().then((data1) => {
-    console.log(data1)
+    console.log(data1[0].title)
 }).catch((error)=>{
     console.log(error)
 })
