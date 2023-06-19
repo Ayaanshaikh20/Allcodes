@@ -130,3 +130,6 @@ console.log(num1.slice(0,3).splice(1, 2))
 console.log(num1)         
 
 
+
+
+

@@ -78,6 +78,35 @@ const spliceMethod=()=>{
     
 }
 
+//Array destructuring
+let items = [2, 3, 5, 6];
+let [x,y,z,p] = items;
+console.log(x,y,z,p)
+
+let xi = 5;
+let yi = 10;
+[xi, yi] = [yi, xi]
+console.log(xi, yi)
+
+let hotel = {
+    name:"hotell",
+    location: "street No xyz delhi",
+    categories: ["chinese", "italian", "English"],
+    mainMenu: ["FoodA", "FoodB", "FoodC"],
+    openingHours:{
+        sunday:{open:"09:00AM", closes:"11:00PM"},
+        monday:{open:"10:00AM", closes:"10:00PM"}
+    }
+}
+
+//change key values using object destructuring
+let {name:hotelName, location: hotelLocation, mainMenu: Menu} = hotel;
+console.log(hotelName, hotelLocation, Menu)
+
+console.log(hotel.openingHours.sunday.closes)
+
+
+
 pushMethod()
 popMethod()
 shiftMethod()
